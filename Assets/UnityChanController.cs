@@ -70,5 +70,6 @@ public class UnityChanController : MonoBehaviour
             //ユニティちゃんを破棄する
             Destroy(gameObject);
         }
+
     }
 }
