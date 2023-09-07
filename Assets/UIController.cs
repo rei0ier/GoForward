@@ -28,7 +28,8 @@ public class UIController : MonoBehaviour
                 // シーンビューからオブジェクトの実体を検索する
                 this.gameOverText  = GameObject.Find ("GameOver");
                 this.runLengthText = GameObject.Find ("RunLength");
-        }
+
+    }
 
         // Update is called once per frame
         void Update ()
@@ -44,7 +45,6 @@ public class UIController : MonoBehaviour
 
                 //ゲームオーバーになった場合
                 if(this.isGameOver== true)
-        {
             //クリックされたらシーンをロードする
             if (Input.GetMouseButtonDown(0))
             {
