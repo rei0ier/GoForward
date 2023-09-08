@@ -13,7 +13,7 @@ public class CubeController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -27,5 +27,15 @@ public class CubeController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    //キューブが積み上がる音
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "cubeTag" || collision.gameObject.tag == "groundTag")
+        {
+            GetComponent<AudioSource>().Play();
+        }
+        
     }
 }

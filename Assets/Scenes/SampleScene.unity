@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 864408457}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: groundTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Distance: 0.00m'
 --- !u!222 &1276313542
 CanvasRenderer:
   m_ObjectHideFlags: 0

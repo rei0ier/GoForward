@@ -58,4 +58,13 @@ public class CubeGenerator : MonoBehaviour
             this.span = this.offsetX + this.spaceX * n;
         }
     }
+    //キューブが積み上がる音
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "cubeTag" || collision.gameObject.tag == "groundTag")
+        {
+            GetComponent<AudioSource>().Play();
+        }
+
+    }
 }

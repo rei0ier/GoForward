@@ -29,6 +29,9 @@ public class UIController : MonoBehaviour
                 this.gameOverText  = GameObject.Find ("GameOver");
                 this.runLengthText = GameObject.Find ("RunLength");
 
+        // 走行距離の初期表示を0.00mに設定
+        this.runLengthText.GetComponent<Text>().text = "Distance: 0.00m";
+
     }
 
         // Update is called once per frame
@@ -45,13 +48,14 @@ public class UIController : MonoBehaviour
 
                 //ゲームオーバーになった場合
                 if(this.isGameOver== true)
-            //クリックされたらシーンをロードする
-            if (Input.GetMouseButtonDown(0))
-            {
-                //SampleSceneを読み込む（追加）
-                SceneManager.LoadScene("SampleScene");
-            }
-        }
+        　　　　　{
+            　　　　　　　//クリックされたらシーンをロードする
+            　　　　　　　if (Input.GetMouseButtonDown(0))
+            　　　　　　　{
+                　　　　　　　　//SampleSceneを読み込む（追加）
+                　　　　　　　　SceneManager.LoadScene("SampleScene");
+            　　　　　　　}
+        　　　　　}
         }
 
         public void GameOver()
