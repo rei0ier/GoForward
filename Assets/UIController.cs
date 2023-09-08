@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
         private GameObject gameOverText;
 
         // 走行距離テキスト
-        private GameObject runLengthText;
+        private GameObject runLengthText=null;
 
         // 走った距離
         private float len = 0;
@@ -28,9 +28,6 @@ public class UIController : MonoBehaviour
                 // シーンビューからオブジェクトの実体を検索する
                 this.gameOverText  = GameObject.Find ("GameOver");
                 this.runLengthText = GameObject.Find ("RunLength");
-
-        // 走行距離の初期表示を0.00mに設定
-        this.runLengthText.GetComponent<Text>().text = "Distance: 0.00m";
 
     }
 
