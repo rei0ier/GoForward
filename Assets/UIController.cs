@@ -36,12 +36,12 @@ public class UIController : MonoBehaviour
         {
                 if (this.isGameOver == false)
                 {
-                        // 走った距離を更新する
-                        this.len += this.speed * Time.deltaTime;
-
                         // 走った距離を表示する
                         this.runLengthText.GetComponent<Text> ().text = "Distance:  "  + len.ToString ("F2") + "m";
-                }
+
+           　　　　　　　 // 走った距離を更新する
+            　　　　　　　this.len += this.speed * Time.deltaTime;
+        }
 
                 //ゲームオーバーになった場合
                 if(this.isGameOver== true)
