@@ -29,7 +29,7 @@ public class UIController : MonoBehaviour
                 this.gameOverText  = GameObject.Find ("GameOver");
                 this.runLengthText = GameObject.Find ("RunLength");
 
-    }
+        }
 
         // Update is called once per frame
         void Update ()
